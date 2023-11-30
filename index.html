@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Time Capsule Encryption</title>
+</head>
+<body>
+    <div id="drop-area">
+        <h3>Drag & Drop Files Here</h3>
+    </div>
+    <input type="datetime-local" id="release-time" />
+    <input type="text" id="wallet-address" placeholder="Enter wallet address" />
+    <button id="encrypt-btn">Encrypt and Create Capsule</button>
+
+    <div id="output">
+        <p>Wallet Address: <span id="output-wallet-address"></span></p>
+        <p>Decryption Key: <span id="output-decryption-key"></span></p>
+        <p>Encryption Hash: <span id="output-encryption-hash"></span></p>
+        <p>Release Time: <span id="output-release-time"></span></p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
